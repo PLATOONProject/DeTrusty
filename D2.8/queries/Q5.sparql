@@ -1,0 +1,7 @@
+SELECT DISTINCT ?humidity ?humidityValue ?humidityProperty WHERE {
+  ?humidity a <https://w3id.org/platoon/RelativeHumidityEvaluation>.
+  ?humidity <https://w3id.org/seas/evaluatedSimpleValue> ?humidityValue.
+  ?humidity <https://w3id.org/seas/hasTemporalContext> ?tempContext.
+  ?humidityProperty a <https://w3id.org/seas/HumidityProperty> .
+  ?humidityProperty <https://w3id.org/seas/evaluation> ?humidity .
+}

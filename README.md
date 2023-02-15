@@ -28,6 +28,21 @@ The following SPARQL 1.1 operations are not supported (yet):
 
 This list might not be exhaustive. Please, let us know if we missed something.
 
+## DeTrusty in PLATOON
+DeTrusty is the federated query engine developed in task T2.4 and is included in the deliverable D2.8.
+Check the directory `D2.8` for a more detailed explanation on how DeTrusty was used and evaluated in PLATOON.
+This detailed explanation includes:
+
+- An overview of what DeTrusty is,
+- An explanation on how DeTrusty works
+- An empirical evaluation of DeTrusty in pilot 2a
+  - Benchmark data and queries
+  - Federated query processing methods evaluated
+  - Metrics used in the comparison
+  - Computational environment
+  - Efficiency evaluation
+  - Evaluation of the continuous behavior
+
 ## Running DeTrusty
 DeTrusty can be used in two different ways: (i) as a Service by running it with Docker, and (ii) as a Python library within your own project.
 Both methods will be explained in the following section.

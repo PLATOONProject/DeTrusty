@@ -1,0 +1,11 @@
+SELECT DISTINCT ?pressure ?pressureValue ?feature WHERE {
+  ?pressure a <https://w3id.org/seas/PressureEvaluation>.
+  ?pressure <https://w3id.org/seas/evaluatedSimpleValue> ?pressureValue.
+  ?pressure <https://w3id.org/seas/hasTemporalContext> ?tempContext.
+  ?pressureProperty a <https://w3id.org/seas/PressureProperty> .
+  ?pressureProperty <https://w3id.org/seas/evaluation> ?pressure .
+  ?feature <https://w3id.org/platoon/hasPressure> ?pressureProperty .
+  ?feature a <https://w3id.org/seas/FeatureOfInterest> .
+  ?generator <https://schema.org/location> ?feature .
+  ?s3 <http://www.w3.org/ns/prov#wasGeneratedBy> ?generator
+}

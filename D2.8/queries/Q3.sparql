@@ -1,0 +1,7 @@
+SELECT DISTINCT ?powerEvaluation ?powerEvaluationValue WHERE {
+  ?powerEvaluation a <https://w3id.org/platoon/ActivePowerEvaluation> .
+  ?powerEvaluation <https://w3id.org/seas/evaluatedSimpleValue> ?powerEvaluationValue .
+  ?powerEvaluation <https://w3id.org/seas/hasTemporalContext> ?tempContext .
+  ?powerEvaluationProperty a <https://w3id.org/seas/ElectricPowerProperty> .
+  ?powerEvaluationProperty <https://w3id.org/seas/evaluation> ?powerEvaluation .
+}

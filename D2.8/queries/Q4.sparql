@@ -1,0 +1,7 @@
+SELECT DISTINCT ?electrical ?electricalValue  ?electricalProperty WHERE {
+  ?electrical a <https://w3id.org/seas/ElectricPowerEvaluation>.
+  ?electrical <https://w3id.org/seas/evaluatedSimpleValue> ?electricalValue.
+  ?electrical <https://w3id.org/seas/hasTemporalContext> ?tempContext.
+  ?electricalProperty a <https://w3id.org/seas/ElectricPowerProperty> .
+  ?electricalProperty <https://w3id.org/seas/evaluation> ?electrical .
+}
