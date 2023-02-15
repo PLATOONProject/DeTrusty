@@ -1,4 +1,5 @@
 # DeTrusty in PLATOON (part of D2.8)
+The following is an excerpt from [Deliverable D2.8: The PLATOON Unified Knowledge Base Creation v2](https://platoon-project.eu/wp-content/uploads/2023/02/D2.8-Unified-Knowledge-Base-creation-v2.pdf) about DeTrusty.
 
 DeTrusty (formerly referred to as FQP; short for Federated Query Processing) is a federated query engine for SPARQL endpoints.
 FQP decomposes the input query into star-shaped sub-queries, i.e., all triple patterns in a sub-query share the same subject.
